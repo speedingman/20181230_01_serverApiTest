@@ -50,7 +50,7 @@ public class LoginActivity extends BaseActivity {
         signUpTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, Sign_upActivity.class);
+                Intent intent = new Intent(mContext, SignUpActivity.class);
                 startActivity(intent);
             }
         });
@@ -101,10 +101,20 @@ public class LoginActivity extends BaseActivity {
                             JSONObject user = data.getJSONObject("user");
 
                             int id = user.getInt("id");
-                            String user_id = user.getString("user");
+                            String user_id = user.getString("user_id");
                             String name = user.getString("name");
                             String email = user.getString("email");
                             String phone = user.getString("phone");
+
+
+                            Intent intent = new Intent(mContext, MainActivity.class);
+                            intent.putExtra("로그인아이디",user_id);
+                            intent.putExtra("이름",name);
+                            intent.putExtra("이메일",email);
+                            intent.putExtra("폰번",phone);
+
+                            startActivity(intent);
+
 
                         } catch (JSONException e) {
                             e.printStackTrace();

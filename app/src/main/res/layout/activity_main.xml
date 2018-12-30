@@ -7,6 +7,43 @@
     android:orientation="vertical"
     tools:context=".MainActivity">\
 
+     <TextView
+         android:id="@+id/userNameTxt"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="30sp"
+         android:text="사용자이름"
+         android:gravity="center"
+         />
+
+    <TextView
+        android:id="@+id/userIdTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="로그인아이디"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/userEamilTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="이메일"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/userPhoneTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="폰번"
+        android:gravity="center"
+        />
+
+
 
 
 </LinearLayout>
