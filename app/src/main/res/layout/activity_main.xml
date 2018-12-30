@@ -31,6 +31,7 @@
 
         android:text="ID"/>
     <EditText
+        android:id="@+id/userIDEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="아이디를 입력하세요"
@@ -43,15 +44,16 @@
         android:textColor="@color/tomato"
         />
     <EditText
+        android:id="@+id/userPWEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"/>
 
     <Button
-
+          android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:text="로그인"/>
+        android:text="로그인" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,6 +67,7 @@
         >
 
         <TextView
+            android:id="@+id/pasTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="비밀번호"
@@ -74,6 +77,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <TextView
+            android:id="@+id/findTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/tomato"
